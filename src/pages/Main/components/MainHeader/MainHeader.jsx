@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './MainHeader.css';
-import HeaderButtonon from './HeaderButton/HeaderButton';
+import HeaderButton from './HeaderButton/HeaderButton';
 
 import ButtonComponent from '@Components/ButtonComponent/ButtonComponent';
 import HeaderMenu from './HeaderMenu/HeaderMenu';
@@ -34,15 +34,13 @@ const MainHeader = () => {
     const { width } = useWindowDimensions();
 
     return (
-        <div className="header">
+        <div>
             <div
-                className="header-main"
                 style={{
                     backgroundImage: width < 1150 ? '' : `url(${header.image})`,
                     backgroundPosition: `${header.backgroundPosition}`,
                     backgroundSize: `${header.backgroundSize}`,
                     backgroundRepeat: 'no-repeat',
-                    padding: '0 135px',
                     paddingBottom: '32px',
                 }}
             >
@@ -63,10 +61,10 @@ const MainHeader = () => {
                     </div>
                 </div>
                 <div className="main-header__buttons">
-                    <HeaderButtonon
+                    <HeaderButton
                         onClick={() => setHeader(headerText.sliderOne)}
                     />
-                    <HeaderButtonon
+                    <HeaderButton
                         onClick={() => setHeader(headerText.sliderTwo)}
                     />
                 </div>

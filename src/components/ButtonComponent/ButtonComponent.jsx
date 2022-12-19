@@ -2,7 +2,7 @@ import React from 'react';
 import './ButtonComponent.css';
 
 const ButtonComponent = ({ value, style, onClick, styleColor }) => (
-    <div className="btn-component" style={style}>
+    <div style={style}>
         <button
             className={`btn-component--button ${styleColor ? styleColor : ''}`}
             onClick={onClick}

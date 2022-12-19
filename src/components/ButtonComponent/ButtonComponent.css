@@ -22,3 +22,11 @@
     background: #E5E31F;
     color: inherit;
 }
+
+@media (max-width: 500px) {
+    .btn-component--button {
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+
+}

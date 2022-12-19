@@ -14,10 +14,20 @@ const Main = () => {
 
     return (
         <div className="main-page-container">
-            <div className="main-page">
-                <MainHeader />
-                <MainContainer />
-                <MainFooter />
+            <div className="main-header">
+                <div className="component-container">
+                    <MainHeader />
+                </div>
+            </div>
+            <div className="main-body">
+                <div className="component-container">
+                    <MainContainer />
+                </div>
+            </div>
+            <div className="main-footer">
+                <div className="component-container">
+                    <MainFooter />
+                </div>
             </div>
         </div>
     );

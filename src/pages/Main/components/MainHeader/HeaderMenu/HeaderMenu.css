@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding-top: 27px;
 }
 
-.header-menu--column{
+.header-menu--column-left, .header-menu--column-right{
     display: flex;
     flex-direction: row;
-
     flex-wrap: nowrap;
     align-items: center;
 }
@@ -48,11 +48,17 @@
 
 .number-value{
     font-size: 13px;
+    white-space: nowrap;
     color: #A9C5E0;
 }
 
-@media (max-width: 900px){
-    .header-menu--column{
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 1100px){
+    .header-menu--column-right{
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-end;
@@ -61,4 +67,11 @@
         margin-right: 0;
         margin-top: 30px;
     }
+}
+
+@media (max-width: 620px) {
+    .menu-separator, .menu-separator, .header-menu--number, .menu-name{
+        display: none;
+    }
+
 }
