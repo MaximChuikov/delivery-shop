@@ -1,0 +1,38 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 140px 135px;
+}
+
+.main-container__name{
+    color: #2A496B;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.main-container__components{
+    margin-top: 143px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-container__components div.component:nth-child(n){
+    margin-bottom: 111px;
+}
+
+.main-container__components:nth-child(-n - 3){
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .main-container{
+        padding: 96px 15px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    
+}

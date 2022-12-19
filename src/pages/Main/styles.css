@@ -1,0 +1,21 @@
+.main-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.main-page{
+
+}
+
+.main-page__title {
+    color: blue;
+    
+}
+
+.main-page__cat-img {
+    width: 300px;
+    height: auto;
+}

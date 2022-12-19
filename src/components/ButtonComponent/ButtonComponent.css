@@ -1,0 +1,24 @@
+.btn-component--button{
+    padding: 13.66px 40.4px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    border: 0;
+}
+
+.btn-component--button:hover{
+    cursor: pointer;
+}
+
+.color-in{
+    background: inherit;
+    border: solid 1px #E5E31F;
+    color: #E5E31F;
+    padding: 13.66px 63.6px;
+}
+
+.color-out{
+    background: #E5E31F;
+    color: inherit;
+}
