@@ -4,4 +4,15 @@
 body {
     font-family: 'Proxima Nova';
     font-weight: 400;
+
+}
+
+body::-webkit-scrollbar {
+    height: 7px;
+    background-color: #e3e15e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#2A496B 30%, #264160 100%);
+    border-radius: 2px;
 }

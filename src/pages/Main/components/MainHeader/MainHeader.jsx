@@ -17,7 +17,7 @@ const headerText = {
             срочной курьерской доставки корреспондеции и других видов отправлений.',
         image: car,
         backgroundSize: '510px',
-        backgroundPosition: 'right 130px bottom',
+        backgroundPosition: 'right bottom',
     },
     sliderTwo: {
         name: 'Подписание договора за 1 час',

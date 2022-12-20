@@ -20,7 +20,6 @@
 }
 .main-header__buttons{
     margin-top: 77px;
-    /* margin-bottom: 32px; */
     text-align: center;
 }
 
@@ -28,7 +27,20 @@
     margin-right: 11px;
 }
 
+
+@media (max-width: 1150px) {
+    .header-main__info{
+        width: 80%;
+    }
+}
+
+
 @media (max-width: 620px) {
+
+    .header-main__info{
+        width: 100%;
+    }
+
     .main-header__text-name {
         font-size: 50px;
     }

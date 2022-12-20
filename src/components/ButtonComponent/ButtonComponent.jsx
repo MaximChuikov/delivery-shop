@@ -1,8 +1,8 @@
 import React from 'react';
 import './ButtonComponent.css';
 
-const ButtonComponent = ({ value, style, onClick, styleColor }) => (
-    <div style={style}>
+const ButtonComponent = ({ value, style, onClick, styleColor, ...props }) => (
+    <div style={style} {...props}>
         <button
             className={`btn-component--button ${styleColor ? styleColor : ''}`}
             onClick={onClick}
