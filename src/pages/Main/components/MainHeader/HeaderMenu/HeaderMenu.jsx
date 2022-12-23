@@ -15,7 +15,7 @@ const HeaderMenu = () => (
         </div>
         <div className="header-menu--column-right">
             <div className="header-menu--number">
-                <img className="number-icon" src={phoneIcon} alt={'лох'} />
+                <img className="number-icon" src={phoneIcon} alt={'phone'} />
                 <div className="number-value">8 (909) 023-12-51</div>
             </div>
             <ButtonComponent value="Вход" styleColor="color-in" />
