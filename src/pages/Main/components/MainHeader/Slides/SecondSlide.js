@@ -2,6 +2,7 @@ import React from 'react';
 import ButtonComponent from "@Components/ButtonComponent/ButtonComponent";
 import './styles.css'
 import blank from "@Assets/images/blank.png";
+import car from "@Assets/images/car.png";
 
 const sliderTwo = {
     name: 'Подписание договора за 1 час',
@@ -11,7 +12,7 @@ const sliderTwo = {
 
 const SecondSlide = () => {
     return (
-        <div className={'second-slide-container'} style={{backgroundImage: blank}}>
+        <div className={'slide-container second-slide'} style={{backgroundImage: `url(${blank})`}}>
             <div className="header-main__info">
                 <div className="main-header__text">
                     <div className="main-header__text-name">

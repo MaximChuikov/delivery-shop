@@ -7,16 +7,9 @@ import SlidesList from "./components/SlidesList";
 
 export const SliderContext = createContext();
 
-
-import a from './assets/arrow.png'
-
-console.log(a)
-
 const Slider = function ({width, height, autoPlay, autoPlayTime, items}) {
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState(null)
-
-
 
     const changeSlide = (direction = 1) => {
         let slideNumber = 0;

@@ -1,55 +1,75 @@
-.first-slide-container, .second-slide-container {
-    background-position: right bottom;
-    background-size: 510px;
+.slide-container {
+    background-position: bottom right;
     background-repeat: no-repeat;
     padding-bottom: 32px;
+    height: 500px;
 }
 
-.second-slide-container {
-    background-size: 575px;
+.first-slide {
+    background-size: 480px;
 }
 
+.second-slide {
+    background-size: 550px;
+    background-attachment: scroll;
+}
 
-.header-main__info{
+.header-main__info {
     display: flex;
     flex-direction: row;
     width: 50%;
 }
 
-.main-header__text-name{
+.main-header__text-name {
     font-size: 64px;
     color: #FFFFFF;
     font-weight: 700;
     max-width: 660px;
 }
 
-.main-header__text-desk{
+.main-header__text-desk {
     margin-top: 18px;
     font-size: 16px;
     max-width: 550px;
     color: #FFFFFF;
     line-height: 24px;
 }
-.main-header__buttons{
+
+.main-header__buttons {
     margin-top: 77px;
     text-align: center;
 }
 
-.main-header__buttons button:nth-child(1){
+.main-header__buttons button:nth-child(1) {
     margin-right: 11px;
 }
 
-
-@media (max-width: 1150px) {
-    .header-main__info{
-        width: 80%;
+@media (max-width: 1400px) {
+    .second-slide > .header-main__info {
+        width: 40%;
     }
 }
 
 
+@media (max-width: 1200px) {
+    .slide-container {
+        background-image: none !important;
+    }
+
+
+
+    .header-main__info {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+
+}
+
 @media (max-width: 620px) {
 
-    .header-main__info{
+    .header-main__info {
         width: 100%;
     }
 
@@ -60,7 +80,5 @@
 
 
 @media (max-width: 1150px) {
-    .first-slide-container {
-        background-image: none;
-    }
+
 }

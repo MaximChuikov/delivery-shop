@@ -1,5 +1,4 @@
 import React from 'react';
-import './MainHeader.css';
 
 import Slider from "@Pages/Main/components/MainHeader/Slider/Slider";
 import FirstSlide from "@Pages/Main/components/MainHeader/Slides/FirstSlide";
