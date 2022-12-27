@@ -2,7 +2,6 @@ import React from 'react';
 import ButtonComponent from "@Components/ButtonComponent/ButtonComponent";
 import './styles.css'
 import blank from "@Assets/images/blank.png";
-import car from "@Assets/images/car.png";
 
 const sliderTwo = {
     name: 'Подписание договора за 1 час',

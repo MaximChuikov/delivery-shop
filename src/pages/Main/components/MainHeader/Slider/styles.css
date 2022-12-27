@@ -3,11 +3,12 @@
     position: static;
 }
 
-.slide-list {
+.slide-list, .slide-list-fast {
     display: flex;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
     width: 100%;
+}
+.slide-list-fast {
 }
 
 .slide {

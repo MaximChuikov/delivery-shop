@@ -1,7 +1,3 @@
-.main-page-container{
-
-}
-
 .main-header, .main-body, .main-footer {
     padding: 0 135px;
 }
@@ -36,7 +32,7 @@
 
 @media (max-width: 1200px) {
 
-    .main-header, .main-container, .main-footer {
+    .main-header, .main-body, .main-footer {
         padding: 0 20px
     }
 

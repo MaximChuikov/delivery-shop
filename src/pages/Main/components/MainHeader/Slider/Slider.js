@@ -5,22 +5,14 @@ import Dots from "./components/Controls/Dots";
 
 import SlidesList from "./components/SlidesList";
 
-export const SliderContext = createContext();
+export const SliderContext = createContext(undefined, undefined);
 
 const Slider = function ({width, height, autoPlay, autoPlayTime, items}) {
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState(null)
 
     const changeSlide = (direction = 1) => {
-        let slideNumber = 0;
-
-        if (slide + direction < 0) {
-            slideNumber = items.length - 1;
-        } else {
-            slideNumber = (slide + direction) % items.length;
-        }
-
-        setSlide(slideNumber);
+        setSlide(slide + direction)
     };
 
     const goToSlide = (number) => {
@@ -55,14 +47,20 @@ const Slider = function ({width, height, autoPlay, autoPlayTime, items}) {
     useEffect(() => {
         if (!autoPlay) return;
 
+        const animationTime = 500
+        let animationDuring = autoPlayTime
+        if (slide === 0) {
+            animationDuring -= animationTime
+        }
+
         const interval = setInterval(() => {
             changeSlide(1);
-        }, autoPlayTime);
+        }, animationDuring);
 
         return () => {
             clearInterval(interval);
         };
-    }, [items.length, slide]); // when images uploaded or slide changed manually we start timer
+    }, [items.length, slide]);
 
     return (
         <div

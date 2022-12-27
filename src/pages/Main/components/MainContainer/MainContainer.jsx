@@ -15,7 +15,7 @@ const MainContainer = () => (
         <div className="main-container__name">5 шагов к заявке</div>
         <div className="main-container__components">
             <ContainerComponent
-                value="Расчетать стоимость"
+                value="Расчитать стоимость"
                 icon={costIcon}
                 desk="Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt."
             />

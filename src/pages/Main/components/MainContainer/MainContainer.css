@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     padding: 96px 0 135px 0;
 }
 
@@ -25,14 +27,4 @@
 
 .main-container__components:nth-child(-n - 3){
     margin-bottom: 0;
-}
-
-@media (max-width: 800px) {
-    .main-container{
-
-    }
-}
-
-@media screen and (max-width: 400px){
-    
 }
