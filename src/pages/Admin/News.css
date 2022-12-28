@@ -23,7 +23,7 @@
 }
 
 textarea::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
     bottom: -30px;
 }
 
@@ -85,15 +85,19 @@ textarea::-webkit-scrollbar-thumb {
     height: 30px;
 }
 
-.output-label {
+.output-label{
     text-overflow: ellipsis;
     white-space: nowrap;
+    flex: 100%;
+    overflow: hidden;
 }
 
 .output-container {
     display: flex;
     align-items: center;
     gap: 20px;
+    max-width: 100%;
+    flex: 100%;
 }
 
 @media (max-width: 600px) {
@@ -104,6 +108,9 @@ textarea::-webkit-scrollbar-thumb {
         gap: 20px;
     }
 
+    .news-container {
+        padding: 20px 0;
+    }
     .area-container {
         width: 100%;
     }
