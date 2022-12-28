@@ -21,13 +21,12 @@ const FirstSlide = () => {
                     <div className="main-header__text-desk">
                         {sliderOne.desk}
                     </div>
-                    <ButtonComponent
-                        style={{marginTop: 87}}
-                        outline={false}
-                    >
-                        Заказать доставку
-                    </ButtonComponent>
                 </div>
+                <ButtonComponent
+                    outline={false}
+                >
+                    Заказать доставку
+                </ButtonComponent>
             </div>
         </div>
     );

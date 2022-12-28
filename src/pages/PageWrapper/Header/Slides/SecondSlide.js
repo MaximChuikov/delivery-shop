@@ -20,13 +20,13 @@ const SecondSlide = () => {
                     <div className="main-header__text-desk">
                         {sliderTwo.desk}
                     </div>
-                    <ButtonComponent
-                        style={{marginTop: 87}}
-                        outline={false}
-                    >
-                        Заказать доставку
-                    </ButtonComponent>
                 </div>
+                <ButtonComponent
+                    style={{whiteSpace: "nowrap"}}
+                    outline={false}
+                >
+                    Заказать доставку
+                </ButtonComponent>
             </div>
         </div>
     );
