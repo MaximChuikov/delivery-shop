@@ -41,8 +41,11 @@ const News = () => {
                               }}
                     />
                     <label className={'textarea-label'}>
-                        Символов: {<label
-                        className={areaText.length > 150 ? 'text-area-error' : ''}>{areaText.length}</label>}/150
+                        Символов: {
+                        <label className={areaText.length > 150 ? 'text-area-error' : ''}
+                               style={{marginLeft: '2px'}}>
+                            {areaText.length}
+                        </label>}/150
                     </label>
                 </div>
 
