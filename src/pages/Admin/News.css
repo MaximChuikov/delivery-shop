@@ -62,6 +62,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .custom-file-upload {
+    white-space: nowrap;
     color: #23415E;
     padding: 6px 12px 6px 0;
     cursor: pointer;
