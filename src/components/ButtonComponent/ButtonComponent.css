@@ -12,15 +12,14 @@
 }
 
 .color-in{
-    background: inherit;
+    background: transparent;
     border: solid 1px #E5E31F;
     color: #E5E31F;
-    padding: 13.66px 63.6px;
 }
 
 .color-out{
     background: #E5E31F;
-    color: inherit;
+    color: #23415E;
 }
 
 @media (max-width: 500px) {

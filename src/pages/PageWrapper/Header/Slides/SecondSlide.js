@@ -21,10 +21,11 @@ const SecondSlide = () => {
                         {sliderTwo.desk}
                     </div>
                     <ButtonComponent
-                        value="Заказать доставку"
                         style={{marginTop: 87}}
-                        styleColor="color-out"
-                    />
+                        outline={false}
+                    >
+                        Заказать доставку
+                    </ButtonComponent>
                 </div>
             </div>
         </div>

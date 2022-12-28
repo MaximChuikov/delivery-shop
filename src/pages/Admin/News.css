@@ -1,0 +1,110 @@
+.news-container {
+    padding: 100px 40px;
+}
+
+.textarea {
+    margin-top: 40px;
+    width: calc(100% - 22px);
+    padding: 10px 10px;
+    border: solid 1px #23415E;
+    border-radius: 6px;
+    resize: none;
+}
+
+.textarea::placeholder {
+    color: #D0C9D6;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 1px 6px;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+    bottom: -30px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: rgba(208, 201, 214, 0.3);;
+    border-radius: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #D0C9D6;
+    border-radius: 6px;
+
+}
+
+.textarea-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #CCC;
+    display: flex;
+    justify-content: right;
+}
+
+.text-area-error {
+    color: #d52937;
+}
+
+.area-container {
+    width: 520px;
+}
+
+.image-uploading-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.custom-file-upload {
+    color: #23415E;
+    padding: 6px 12px 6px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.file-input {
+    display: none;
+}
+
+.label-photo {
+    width: 20px;
+    margin: 2px 0;
+}
+
+.output-image {
+    width: 30px;
+    height: 30px;
+}
+
+.output-label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.output-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .image-uploading-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .area-container {
+        width: 100%;
+    }
+}

@@ -1,27 +1,24 @@
 import React from 'react';
 import 'normalize.css';
 
-import MainHeader from './components/MainHeader/MainHeader';
-import MainContainer from './components/MainContainer/MainContainer';
-import MainFooter from './components/MainFooter/MainFooter';
-
-import { useWindowDimensions } from '@Helpers/useWindowDimensions';
-
+import {Outlet} from "react-router-dom"
+import MainHeader from './Header/MainHeader';
+import MainFooter from './Footer/MainFooter';
+import PropTypes from "prop-types";
 import './styles.css';
 
-const Main = () => {
-    const { width } = useWindowDimensions;
+const PageWrapper = ({slider = false}) => {
 
     return (
         <div className="main-page-container">
             <div className="main-header">
                 <div className="component-container">
-                    <MainHeader />
+                    <MainHeader slider={slider} />
                 </div>
             </div>
             <div className="main-body">
                 <div className="component-container">
-                    <MainContainer />
+                    <Outlet />
                 </div>
             </div>
             <div className="main-footer">
@@ -33,4 +30,8 @@ const Main = () => {
     );
 };
 
-export default Main;
+PageWrapper.propTypes = {
+    slider: PropTypes.bool
+}
+
+export default PageWrapper;

@@ -1,12 +1,20 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import {Route, Routes, useLocation} from 'react-router-dom';
 
-import Main from '@Pages/Main/Main';
+import MainContainer from '@Pages/Main/MainContainer';
+import PageWrapper from "@Pages/PageWrapper/PageWrapper";
+import News from "@Pages/Admin/News";
 
 const App = () => {
+    const location = useLocation()
+    console.log(location)
+
     return (
-        <Routes>
-            <Route path="/" element={<Main />} />
+        <Routes >
+            <Route path={'/'} element={<PageWrapper slider={location.pathname === '/'}/>}>
+                <Route index element={<MainContainer />}/>
+                <Route path={'admin'} element={<News />}/>
+            </Route>
         </Routes>
     );
 };

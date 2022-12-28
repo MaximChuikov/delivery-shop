@@ -1,10 +1,9 @@
 .header-menu{
-    margin-bottom: 183px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 27px;
+    padding: 27px 0;
 }
 
 .header-menu--column-left, .header-menu--column-right{
