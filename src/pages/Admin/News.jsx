@@ -8,18 +8,24 @@ const News = () => {
     const [image, setImage] = useState(null)
     const [imageName, setImageName] = useState(null)
     const [areaText, setAreaText] = useState('')
+    const [size, setSize] = useState([0, 0])
 
     const [showErrors, setShowErrors] = useState(false)
 
     function loadFile(e) {
         setShowErrors(false)
+        console.log(e.target.files[0], URL.createObjectURL(e.target.files[0]))
+        const img = new Image();
+        img.onload = function () {
+            setSize([this.width, this.height]);
+        };
+        img.src = URL.createObjectURL(e.target.files[0]);
         setImage(URL.createObjectURL(e.target.files[0]))
         setImageName(e.target.files[0].name)
     }
 
     function submitHandler() {
         setShowErrors(true)
-
     }
 
     return (
@@ -61,33 +67,33 @@ const News = () => {
                     </label>
                     {
                         image && imageName
-                            ?
-                            <div className={'output-container'}>
-                                <img className={'output-image'} src={image} alt={''}/>
-                                <label className={'output-label'}>{imageName}</label>
-                                <img className={'label-photo'}
-                                     style={{cursor: "pointer"}}
-                                     src={exit}
-                                     alt={'Х'} onClick={() => {
-                                    setImageName(null)
-                                    setImage(null)
-                                }}
-                                />
-                            </div>
-                            :
-                            showErrors
-                            &&
-                            <div className={'output-container'}>
-                                <label className={'text-area-error output-label'}>Неверный формат изображения</label>
-                            </div>
+                        &&
+                        <div className={'output-container'}>
+                            <img className={'output-image'} src={image} alt={''}/>
+                            <label className={'output-label'}>{imageName}</label>
+                            <img className={'label-photo'}
+                                 style={{cursor: "pointer"}}
+                                 src={exit}
+                                 alt={'Х'} onClick={() => {
+                                setImageName(null)
+                                setImage(null)
+                            }}
+                            />
+                        </div>
+                    }
+                    {
+                        showErrors && ( size[0] !== 270 || size[1] !== 270 )
+                        &&
+                        <div>
+                            <label className={'text-area-error output-label'}>Неверный формат изображения</label>
+                        </div>
 
                     }
                 </div>
-
                 {
                     showErrors && areaText.length > 150
                     &&
-                    <div style={{marginTop: "40px"}}>
+                    <div style={{marginTop: "20px"}}>
                         <label className={'text-area-error'}>Превышен лимит символов</label>
                     </div>
 
