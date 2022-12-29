@@ -14,7 +14,6 @@ const News = () => {
 
     function loadFile(e) {
         setShowErrors(false)
-        console.log(e.target.files[0], URL.createObjectURL(e.target.files[0]))
         const img = new Image();
         img.onload = function () {
             setSize([this.width, this.height]);
