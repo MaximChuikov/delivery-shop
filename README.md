@@ -1,3 +1,7 @@
+## Посмотреть деплой можно тут
+
+https://delivery-site-kitsuk.netlify.app/
+
 ## Запуск
 
 - Установить Node.js версии, подходящей по правилам `engines` из `package.json` (через менеджер зависимостей Volta, NVM либо вручную)
