@@ -5,7 +5,7 @@ import {Outlet} from "react-router-dom"
 import MainHeader from './Header/MainHeader';
 import MainFooter from './Footer/MainFooter';
 import PropTypes from "prop-types";
-import './styles.css';
+import './PageWrapper.css';
 
 const PageWrapper = ({slider = false}) => {
 

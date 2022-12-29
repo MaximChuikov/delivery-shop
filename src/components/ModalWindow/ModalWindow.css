@@ -75,10 +75,15 @@
 }
 
 .input-container input {
-    width: 100%;
+    width: calc(100% - 42px);
+    padding: 2px 20px;
     border: solid #23415E 1px;
     border-radius: 6px;
     height: 48px;
+}
+
+.input-container input:not(:valid):not(:placeholder-shown) {
+    border-color: #d52937;
 }
 
 .input-container input::placeholder {
@@ -86,7 +91,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    padding-left: 25px;
+    padding-left: 3px;
 }
 
 .input-login:focus, .input-password:focus {

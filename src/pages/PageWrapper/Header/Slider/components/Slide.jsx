@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles.css";
+import "../Slider.css";
 
 export default function Slide({ data }) {
   return (

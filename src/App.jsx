@@ -7,8 +7,6 @@ import News from "@Pages/Admin/News";
 
 const App = () => {
     const location = useLocation()
-    console.log(location)
-
     return (
         <Routes >
             <Route path={'/'} element={<PageWrapper slider={location.pathname === '/'}/>}>

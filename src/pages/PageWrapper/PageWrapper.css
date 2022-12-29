@@ -31,9 +31,7 @@
 }
 
 @media (max-width: 1200px) {
-
     .main-header, .main-body, .main-footer {
         padding: 0 20px
     }
-
 }

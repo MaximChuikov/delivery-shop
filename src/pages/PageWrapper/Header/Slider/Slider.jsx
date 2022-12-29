@@ -8,6 +8,7 @@ import SlidesList from "./components/SlidesList";
 export const SliderContext = createContext(undefined, undefined);
 
 const Slider = function ({width, height, autoPlay, autoPlayTime, items}) {
+    console.log(items, 'in slider')
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState(null)
 

@@ -1,8 +1,7 @@
 @import '../assets/fonts/proximaNova.css';
 
-
 body {
-    font-family: 'Proxima Nova';
+    font-family: 'Proxima Nova', serif;
     font-weight: 400;
 
 }

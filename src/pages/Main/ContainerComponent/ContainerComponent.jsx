@@ -4,7 +4,7 @@ import './ContainerComponent.css';
 const ContainerComponent = ({ value, desk, icon }) => (
     <div className="component">
         <div className="component-img">
-            <img src={icon} />
+            <img src={icon} alt={'Картинка'}/>
         </div>
         <div className="component-value">{value}</div>
         <div className="component-desk">{desk}</div>

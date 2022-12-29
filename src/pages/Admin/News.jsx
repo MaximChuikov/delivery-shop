@@ -88,7 +88,7 @@ const News = () => {
                     showErrors && areaText.length > 150
                     &&
                     <div style={{marginTop: "40px"}}>
-                        <label className={'text-area-error'}>Неверный формат изображения</label>
+                        <label className={'text-area-error'}>Превышен лимит символов</label>
                     </div>
 
                 }

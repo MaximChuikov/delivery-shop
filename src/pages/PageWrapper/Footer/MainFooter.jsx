@@ -7,7 +7,7 @@ import './MainFooter.css';
 const MainFooter = () => (
     <div className="footer">
         <div className="footer-logo">
-            <img className="footer-logo__img" src={logoIcon} />
+            <img className="footer-logo__img" src={logoIcon} alt={'Логотип'} />
         </div>
         <div className="footer-list">
             <div className="footer-list__element">

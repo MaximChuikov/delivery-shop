@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { SliderContext } from "../../Slider";
 import Dot from "./Dot";
 
-import "../../styles.css";
+import "../../Slider.css";
 
 export default function Dots() {
   const { slidesCount } = useContext(SliderContext);

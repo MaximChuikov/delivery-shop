@@ -1,16 +1,25 @@
 .btn-component--button{
-    padding: 13.66px 40.4px;
+    padding: 14px 40px;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 600;
     outline: none;
     border: 0;
+    transition: 0.2s;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn-component--button:hover{
     cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.37);
+    transition: all .2s;
+    transform: translateY(-3px);
 }
 
+.btn-component--button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
 .color-in{
     background: transparent;
     border: solid 1px #E5E31F;
@@ -20,6 +29,20 @@
 .color-out{
     background: #E5E31F;
     color: #23415E;
+}
+
+@media (max-width: 800px) {
+    .btn-component--button:hover{
+        cursor: pointer;
+        box-shadow: none;
+        transition: all .2s;
+        transform: translateY(0);
+    }
+
+    .btn-component--button:active {
+        transform: translateY(2px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.37);
+    }
 }
 
 @media (max-width: 500px) {
